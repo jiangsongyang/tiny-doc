@@ -1,0 +1,14 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+    "err": {
+      "name": "pnpm",
+      "message": "No package.json (or package.yaml, or package.json5) was found in \"/Users/jiangsongyang/Documents/study/tiny-doc\".",
+      "code": "ERR_PNPM_NO_IMPORTER_MANIFEST_FOUND",
+      "stack": "pnpm: No package.json (or package.yaml, or package.json5) was found in \"/Users/jiangsongyang/Documents/study/tiny-doc\".\n    at readProjectManifest (/Users/jiangsongyang/.nvm/versions/node/v16.13.0/lib/node_modules/pnpm/dist/pnpm.cjs:20808:13)\n    at async Object.readProjectManifestOnly (/Users/jiangsongyang/.nvm/versions/node/v16.13.0/lib/node_modules/pnpm/dist/pnpm.cjs:20812:28)\n    at async readProjectManifestOnly (/Users/jiangsongyang/.nvm/versions/node/v16.13.0/lib/node_modules/pnpm/dist/pnpm.cjs:43834:24)\n    at async Object.handler (/Users/jiangsongyang/.nvm/versions/node/v16.13.0/lib/node_modules/pnpm/dist/pnpm.cjs:178132:24)\n    at async /Users/jiangsongyang/.nvm/versions/node/v16.13.0/lib/node_modules/pnpm/dist/pnpm.cjs:182701:21\n    at async run (/Users/jiangsongyang/.nvm/versions/node/v16.13.0/lib/node_modules/pnpm/dist/pnpm.cjs:182675:34)\n    at async runPnpm (/Users/jiangsongyang/.nvm/versions/node/v16.13.0/lib/node_modules/pnpm/dist/pnpm.cjs:182893:5)\n    at async /Users/jiangsongyang/.nvm/versions/node/v16.13.0/lib/node_modules/pnpm/dist/pnpm.cjs:182885:7"
+    }
+  }
+}
