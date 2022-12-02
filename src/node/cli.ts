@@ -1,4 +1,6 @@
 import { cac } from "cac";
+import { createDevServer } from "./dev";
+import { resolve } from "node:path";
 
 const version = require("../../package.json").version;
 
@@ -8,7 +10,11 @@ cli
   .command("[root]", "start dev server")
   .alias("dev")
   .action(async (root: string) => {
-    console.log("dev", root);
+    // 添加以下逻辑
+    root = root ? resolve(root) : process.cwd();
+    const server = await createDevServer(root);
+    await server.listen();
+    server.printUrls();
   });
 
 cli
